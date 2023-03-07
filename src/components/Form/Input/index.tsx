@@ -14,7 +14,7 @@ const Input = ({ label, register, error, type }: IInputProps) => {
     <fieldset>
       <StyledTextField label={label} type={type} {...register} />
       {error ? (
-        <StyledParagraph fontColor='red'>{error.root?.message}</StyledParagraph>
+        <StyledParagraph fontColor='red'>{error.message}</StyledParagraph>
       ) : null}
     </fieldset>
   );
